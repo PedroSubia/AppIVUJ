@@ -34,3 +34,12 @@ C:\proyectos\Appadju\Appadju\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.
 C:\proyectos\Appadju\Appadju\Dominio\obj\Debug\Dominio.csproj.CopyComplete
 C:\proyectos\Appadju\Appadju\Dominio\obj\Debug\Dominio.dll
 C:\proyectos\Appadju\Appadju\Dominio\obj\Debug\Dominio.pdb
+D:\nahuel\AppIVUJ\Dominio\bin\Debug\Dominio.dll
+D:\nahuel\AppIVUJ\Dominio\bin\Debug\Dominio.pdb
+D:\nahuel\AppIVUJ\Dominio\bin\Debug\AccesoDatos.dll
+D:\nahuel\AppIVUJ\Dominio\bin\Debug\AccesoDatos.pdb
+D:\nahuel\AppIVUJ\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+D:\nahuel\AppIVUJ\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+D:\nahuel\AppIVUJ\Dominio\obj\Debug\Dominio.csproj.CopyComplete
+D:\nahuel\AppIVUJ\Dominio\obj\Debug\Dominio.dll
+D:\nahuel\AppIVUJ\Dominio\obj\Debug\Dominio.pdb

@@ -13,7 +13,7 @@ namespace AccesoDatos.Repositorios
         private readonly string cadenaConexion;
         public Repositorio()
         {
-            cadenaConexion = ConfigurationManager.ConnectionStrings["conn_IVUJ_Pedro"].ToString();
+            cadenaConexion = ConfigurationManager.ConnectionStrings["conn_IVUJ_Sistemas"].ToString();
         }
         protected SqlConnection GetConnection()
         {

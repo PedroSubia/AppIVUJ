@@ -31,6 +31,7 @@
             this.dgvTitular = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textFechaNac = new System.Windows.Forms.DateTimePicker();
             this.textFechaInscrip = new System.Windows.Forms.DateTimePicker();
             this.textCorreoElectr = new System.Windows.Forms.TextBox();
             this.textTelefono = new System.Windows.Forms.TextBox();
@@ -56,7 +57,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.textFechaNac = new System.Windows.Forms.DateTimePicker();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTitular)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -114,6 +115,15 @@
             this.panel1.Size = new System.Drawing.Size(344, 644);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // textFechaNac
+            // 
+            this.textFechaNac.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.textFechaNac.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.textFechaNac.Location = new System.Drawing.Point(134, 365);
+            this.textFechaNac.Name = "textFechaNac";
+            this.textFechaNac.Size = new System.Drawing.Size(205, 20);
+            this.textFechaNac.TabIndex = 25;
             // 
             // textFechaInscrip
             // 
@@ -344,20 +354,23 @@
             this.button3.Text = "Nuevo Titular";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // textFechaNac
+            // button4
             // 
-            this.textFechaNac.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.textFechaNac.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.textFechaNac.Location = new System.Drawing.Point(134, 365);
-            this.textFechaNac.Name = "textFechaNac";
-            this.textFechaNac.Size = new System.Drawing.Size(205, 20);
-            this.textFechaNac.TabIndex = 25;
+            this.button4.BackColor = System.Drawing.Color.Green;
+            this.button4.Location = new System.Drawing.Point(41, 563);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(105, 37);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "Exportar Excel";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // frmABMTitular
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 761);
+            this.ClientSize = new System.Drawing.Size(1184, 749);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
@@ -406,5 +419,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DateTimePicker textFechaInscrip;
         private System.Windows.Forms.DateTimePicker textFechaNac;
+        private System.Windows.Forms.Button button4;
     }
 }
