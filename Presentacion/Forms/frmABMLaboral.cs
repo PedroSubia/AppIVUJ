@@ -49,5 +49,38 @@ namespace Presentacion.Forms
             // textFilterById.Text.StartsWith("");
             // textFilterById.Clear();
         }
+
+        private void buttonExcel_Click(object sender, EventArgs e)
+        {
+            exportarExcel(dataGridView1);
+        }
+
+        public void exportarExcel(DataGridView dataListado)
+        {
+            Microsoft.Office.Interop.Excel.Application exportarExcel = new Microsoft.Office.Interop.Excel.Application();
+            exportarExcel.Workbooks.Add(true);
+
+
+            int indiceColumna = 0;
+            foreach (DataGridViewColumn col in dataListado.Columns)
+            {
+                indiceColumna++;
+                exportarExcel.Cells[1, indiceColumna] = col.Name;
+            }
+            int indiceFila = 0;
+            foreach (DataGridViewRow row in dataListado.Rows)
+            {
+                indiceFila++;
+                indiceColumna = 0;
+                foreach (DataGridViewColumn col in dataListado.Columns)
+                {
+                    indiceColumna++;
+                    exportarExcel.Cells[indiceFila + 1, indiceColumna] = row.Cells[col.Name].Value;
+                }
+            }
+            exportarExcel.Visible = true;
+
+        }
+
     }
 }
